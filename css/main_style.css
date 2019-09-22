@@ -7,6 +7,10 @@ Colorblind safe color palette from colorbrewer2.org.
 #5e3c99 Blue
 */
 
+/*
+Removed the small space above the heading and its background color. Also
+flushed all the content so that the scroll bar is ineffective.
+*/
 body {
   background-color: #e66101;
   color: #5e3c99;
@@ -14,12 +18,23 @@ body {
   margin: 0;
 }
 
+/*
+Created a 5px padding to the light orange background color of the heading
+and shortened the margins which made the top of the profile picture touch the
+heading’s background color but left a small space above the heading.
+*/
 h1 {
   color: #f7f7f7;
   padding: 5px;
   margin: 0;
 }
 
+/*
+Created a background container for the text and profile picture that touches
+the heading like the profile picture did last step. The margins on the left and
+right remain thick between the edge of the screen and the background container.
+The corners of the body container + heading background color are rounded.
+*/
 #body-container {
   background-color: #f7f7f7;
   max-width: 1000px;
@@ -30,10 +45,20 @@ h1 {
   overflow: hidden;
 }
 
+/*
+The command added a light orange background color to the heading text that
+reads “Hello, my name is Jake Stewart!”.
+*/
 #header {
   background-color: #fdb863;
 }
 
+/*
+Moved the image to the top left of the body container thus positioning the
+text to the right of the image as well. Padding was added to the area above the
+text in the body container. The size of the welcome text containing the URL links
+was increased by 25px.
+*/
 #profile-picture {
   float: left;
 }
@@ -43,6 +68,10 @@ h1 {
   font-size: 25px
 }
 
+/*
+The research interests text group moved from a center alignment to a left 
+alignment by 50px. The size of the text was increased by 25px.
+*/
 #research-interests {
   text-align: left;
   font-size: 25px;
