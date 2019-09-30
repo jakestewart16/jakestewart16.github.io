@@ -15,7 +15,7 @@
       <img src=images/profile-picture.jpg width=500px height=500px/>
     </div>
     <div id="welcome-text">
-      Welcome to my webpage.<br>
+      My name is Jake Stewart.<br>
       I am a student in the
       <a href="https://www.geo.txstate.edu/">Geography Department</a> at
       <a href="https://txstate.edu/">Texas State University</a>.</p>
@@ -27,6 +27,16 @@
         <li>Machine Learning</li>
         <li>Spatio-Temporal Analysis</li>
       </ol>
+    </div>
+    <div id="copyright">
+      <script>
+       // updates the date variable for the copyright section to today's date
+       var today = new Date();
+       // specifies that today's date needs to be the full year. 2019 in this case
+       var year = today.getFullYear();
+       // adds copyright "C" after the word Copyright and before the year
+       document.writeln("Copyright &copy;" + year);
+      </script>
     </div>
   </div>
 </body>

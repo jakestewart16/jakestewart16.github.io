@@ -69,7 +69,7 @@ was increased by 25px.
 }
 
 /*
-The research interests text group moved from a center alignment to a left 
+The research interests text group moved from a center alignment to a left
 alignment by 50px. The size of the text was increased by 25px.
 */
 #research-interests {
@@ -77,4 +77,11 @@ alignment by 50px. The size of the text was increased by 25px.
   font-size: 25px;
   position: relative;
   left: 50px;
+}
+
+#copyright {
+  position: absolute;
+  width: 1000px;
+  text-align: center;
+  bottom: 20px;
 }
