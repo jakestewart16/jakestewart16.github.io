@@ -85,3 +85,9 @@ alignment by 50px. The size of the text was increased by 25px.
   text-align: center;
   bottom: 20px;
 }
+
+#webmap-reviews{
+  text-align: left;
+  font-size: 25px;
+  position: relative;
+}
