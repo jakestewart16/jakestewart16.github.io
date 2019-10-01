@@ -5,11 +5,16 @@
   <!-- ALL styling for this HTML document are contained in this external css
   file -->
   <link rel="stylesheet" type="text/css" href="css/main_style.css">
+  <script src="javascript/external.js"></script>
 </head>
 <body>
   <div id="body-container">
     <div id="header">
-      <h1>Hello, welcome <script src="javascript/external.js"></script>!</h1>
+      <h1>
+        <script>
+        document.write(welcome());
+        </script>
+      </h1>
     </div>
     <div id="profile-picture">
       <img src=images/profile-picture.jpg width=500px height=500px/>
