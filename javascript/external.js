@@ -46,7 +46,7 @@ var webmaps =
   [
     ["WingStop - Store Locator",
     "https://www.wingstop.com/order/",
-    "The Wing Stop store locator is a slippy map application used to help the user find Wing Stop 	store locations in their area. GIS functionalities include an area locator query that uses either the 	user’s state, city, or zip code to find the stores nearest to them. Using an API via Google Maps, 	the map is familiar enough for general users to comprehend and navigate effectively."
+    "The Wing Stop store locator is a slippy map application used to help the user find Wing Stop 	store locations in their area. GIS functionalities include an area locator query that uses either the 	users state, city, or zip code to find the stores nearest to them. Using an API via Google Maps, 	the map is familiar enough for general users to comprehend and navigate effectively."
     ],
     ["LexisNexis Community Crime Map",
     "https://communitycrimemap.com/",
@@ -75,7 +75,12 @@ function webmap_table()
     document.write("<tr>");
     for (var column=0; column < webmaps[0].length; column++)
     {
-      document.write("<td>" + webmaps[row][column] + "</td>");
+      if(column < 2){
+        document.write("<td>" + webmaps[row][column] + "</td>");
+      }
+      else {
+        document.write("<tr> </tr> <td colspan='2'>" + webmaps[row][column] + "<p></td></tr>");
+      }
     }
     document.write("</tr>");
   }
