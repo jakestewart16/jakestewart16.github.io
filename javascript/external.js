@@ -67,6 +67,7 @@ function welcome()
   return message
 }
 
+
 function webmap_table()
 {
   document.write("<table width=100%>");
